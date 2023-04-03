@@ -31,6 +31,26 @@ const questions = [
         message: 'Enter Test Instructions for your Project.',
     },
     {
+        type: 'input',
+        name: 'githubname',
+        message: 'Enter Your GitHub Username.',
+    },
+    {
+        type: 'input',
+        name: 'githublink',
+        message: 'Enter Your GitHub Profile Link.',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter Your Email Address.',
+    },
+    {
+        type: 'input',
+        name: 'contact',
+        message: 'Enter Instructions on How to Contact you, that will be displayed below your GitHub and Email Information.'
+    },
+    {
         type: 'checkbox',
         message: 'Please Choose a License for your Project.',
         name: 'license',
@@ -51,7 +71,8 @@ ${answers.description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution Guidelines](#contribution-guidelines)
-- [Tests](#tests)
+- [Test Instructions](#tests)
+- [Questions](#questions)
 - [License](#license)
 
 # Installation
@@ -69,6 +90,16 @@ ${answers.contribution}
 # Test Instructions
 
 ${answers.tests}
+
+# Questions
+
+${answers.githubname}
+
+${answers.githublink}
+
+${answers.email}
+
+${answers.contact}
 
 # License
 
